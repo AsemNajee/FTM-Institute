@@ -1,0 +1,28 @@
+:root{
+   --main-color:#3a81b4;
+}
+body{
+   min-height: 100vh;
+   background-color: #3a81b4;
+}
+main{
+   height: 100vh;
+}
+main header{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+header h4{
+   font-size: 1.8em;
+   margin: 50px 8px;
+   text-align: center;
+   color: #fff;
+}
+header p{
+   text-align: center;
+   color: #dfdfdf66;
+   font-size:.9em;
+   padding: 0 5px;
+}

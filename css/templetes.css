@@ -1,0 +1,180 @@
+@font-face{
+   font-family: 'Cairo';
+   src: url('../fonts/Cairo-Medium.ttf');
+}
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'Cairo';
+   line-height: 25px;
+   letter-spacing: 1px;
+   max-width: 100vw;
+   box-sizing: border-box;
+   text-decoration: none;
+   scroll-behavior: smooth ;
+}
+
+
+
+
+.container {
+   max-width: 1190px;
+   max-width: 80%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   align-items: center;
+}
+@media(min-width:1170px){
+   .container{
+      max-width: 1070px !important;
+   }
+}
+@media(max-width:450px){
+   .container{
+      max-width: 95%;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section{
+   width: 100%;
+   min-height: 70vh;
+   /* height: 80vh; */
+   padding: 50px 0;
+}
+.section:first-child{
+   display: flex;
+   align-items: center;
+   min-height: 90vh;
+}
+.section.blue{
+   background-color: #3a81b4;
+}
+.section.grey{
+   background-color: #fff;
+}
+.section:first-child .container{
+   width: 100vw;
+}
+
+
+
+
+
+
+
+.section-title{
+   font-size: 1.9em;
+   color: #ccc;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   margin: 50px 0 20px 0;
+}
+.grey .section-title{
+   color: #105d91b6;
+}
+@media(max-width:450px){
+   .section-title{
+      font-size: 1.5em;
+   }
+}
+.section .section-info{
+   font-size: 1em;
+   color: #aaaaaa88;
+   margin-bottom:50px ;
+}
+.grey .section-info{
+   color: #aaaaaa;
+}
+.section .content{
+   width: 100%;
+}
+.grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fill , minmax(280px , 1fr));
+}
+.section .item{
+   position: relative;
+   margin: 5px 8px;
+   padding: 8px;
+   background-color: #1a3a50;
+   border-radius: 16px 5px;
+   color: #fff;
+   display: flex;
+}
+.section .item i{
+   width: 35px;
+   font-size: 20px;
+   margin: 5px 0;
+   color: #ffffffcc;
+}
+.section .item-title{
+   font-size: 1.3em;
+   color: #7acaff;
+   margin: 5px;
+}
+.section .item-info{
+   font-size: .8em;
+   color: #ffffff88;
+}
+
+
+
+
+
+
+
+
+
+
+.analysis {
+   display: flex;
+   gap: 8px;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   margin: 25px;
+}
+.analysis .item{
+   max-width: 350px;
+   flex-grow: 2;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   border-radius: 25px;
+   background-color: #dddddd77;
+   color: #fff;
+   font-size: .8em;
+}
+.analysis .item .title-item{
+   color: #ddd;
+}
+.analysis .item .info-item{
+   color: #0e0;
+   font-size: 2.5em;
+}
+.analysis .item i{
+   color: #3a81b4;
+   font-size: 2em;
+}
