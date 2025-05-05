@@ -42,9 +42,10 @@ body{
 
 /* Nav bar */
 nav ul{
+   z-index: 11;
    display: flex;
    background-color: var(--main-color);
-   justify-content: flex-start;
+   justify-content: space-evenly;
    align-items: center;
    position: fixed;
    list-style: none;
@@ -82,7 +83,7 @@ nav ul li a{
    background-color: #2e445755;
    animation: fly 1.5s infinite;
    box-shadow: 2px 2px #000;
-   z-index: 1000;
+   z-index: 12;
 }
 .fly i{
    font-size: 1.6em;
@@ -177,8 +178,9 @@ footer{
 /* Sections */
 .container {
    display: flex;
+   /* overflow: hidden; */
    flex-direction: column;
-   max-width: 1190px;
+   max-width: 990px;
    min-height: 100%;
    margin: 0 auto;
    gap: 8px;
@@ -228,9 +230,10 @@ section:nth-of-type(3n-2) .content p{
    display: flex;
    gap: 8px;
    justify-content: space-evenly;
-   padding: 0 8px;
+   padding: 0 20px;
    flex-wrap: nowrap;
    overflow-x: auto;
+   max-width: 100%;
    color: #fff;
 }
 .content ol li{
@@ -240,7 +243,7 @@ section:nth-of-type(3n-2) .content p{
    padding: 16px;
    background-color: #fff3;
    border-radius: 8px;
-   min-width: 300px;
+   min-width: 250px;
    font-size: 1.1em;
    color: #fff;
    list-style-position: inside;
@@ -260,7 +263,7 @@ section:nth-of-type(3n-2) .content p{
    padding: 20px;
    padding-bottom: 40px;
    gap: 8px;
-   min-width: 300px;
+   min-width: 250px;
    align-items: center;
    background-color: #2990ff15;
 }
@@ -308,6 +311,7 @@ form{
    box-shadow: 0 0 10px #ddd;
    width: 80vw;
    max-width: 500px;
+   margin: 10px;
 }
 form p{
    color: #000;
