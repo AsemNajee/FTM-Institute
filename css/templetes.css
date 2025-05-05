@@ -1,6 +1,6 @@
 @font-face{
    font-family: 'Cairo';
-   src: url('../fonts/Cairo-Medium.ttf');
+   src: url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
 }
 *{
    padding: 0;
@@ -13,10 +13,6 @@
    text-decoration: none;
    scroll-behavior: smooth ;
 }
-
-
-
-
 .container {
    max-width: 1190px;
    max-width: 80%;
@@ -26,38 +22,11 @@
    gap: 8px;
    align-items: center;
 }
-@media(min-width:1170px){
-   .container{
-      max-width: 1070px !important;
-   }
-}
-@media(max-width:450px){
-   .container{
-      max-width: 95%;
-   }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Section */
 .section{
    width: 100%;
-   min-height: 70vh;
-   /* height: 80vh; */
+   min-height: min(300px, 70dvh);
    padding: 50px 0;
 }
 .section:first-child{
@@ -80,7 +49,7 @@
 
 
 
-
+/* Section Content */
 .section-title{
    font-size: 1.9em;
    color: #ccc;
@@ -91,12 +60,7 @@
 .grey .section-title{
    color: #105d91b6;
 }
-@media(max-width:450px){
-   .section-title{
-      font-size: 1.5em;
-   }
-}
-.section .section-info{
+.section-info{
    font-size: 1em;
    color: #aaaaaa88;
    margin-bottom:50px ;
@@ -177,4 +141,22 @@
 .analysis .item i{
    color: #3a81b4;
    font-size: 2em;
+}
+
+
+
+
+
+@media(min-width:1170px){
+   .container{
+      max-width: 1070px;
+   }
+}
+@media(max-width:450px){
+   .container{
+      max-width: 95%;
+   }
+   .section-title{
+      font-size: 1.5em;
+   }
 }
